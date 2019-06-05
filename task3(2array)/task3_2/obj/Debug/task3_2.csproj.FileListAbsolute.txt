@@ -1,0 +1,7 @@
+C:\Users\ПК Мастер\source\repos\task3_2\task3_2\bin\Debug\task3_2.exe.config
+C:\Users\ПК Мастер\source\repos\task3_2\task3_2\bin\Debug\task3_2.exe
+C:\Users\ПК Мастер\source\repos\task3_2\task3_2\bin\Debug\task3_2.pdb
+C:\Users\ПК Мастер\source\repos\task3_2\task3_2\obj\Debug\task3_2.csprojAssemblyReference.cache
+C:\Users\ПК Мастер\source\repos\task3_2\task3_2\obj\Debug\task3_2.csproj.CoreCompileInputs.cache
+C:\Users\ПК Мастер\source\repos\task3_2\task3_2\obj\Debug\task3_2.exe
+C:\Users\ПК Мастер\source\repos\task3_2\task3_2\obj\Debug\task3_2.pdb
