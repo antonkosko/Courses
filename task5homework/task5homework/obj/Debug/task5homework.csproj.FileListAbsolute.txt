@@ -1,0 +1,7 @@
+C:\Users\ПК Мастер\source\repos\task5homework\task5homework\bin\Debug\task5homework.exe.config
+C:\Users\ПК Мастер\source\repos\task5homework\task5homework\bin\Debug\task5homework.exe
+C:\Users\ПК Мастер\source\repos\task5homework\task5homework\bin\Debug\task5homework.pdb
+C:\Users\ПК Мастер\source\repos\task5homework\task5homework\obj\Debug\task5homework.csprojAssemblyReference.cache
+C:\Users\ПК Мастер\source\repos\task5homework\task5homework\obj\Debug\task5homework.csproj.CoreCompileInputs.cache
+C:\Users\ПК Мастер\source\repos\task5homework\task5homework\obj\Debug\task5homework.exe
+C:\Users\ПК Мастер\source\repos\task5homework\task5homework\obj\Debug\task5homework.pdb
