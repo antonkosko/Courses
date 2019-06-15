@@ -12,26 +12,31 @@ namespace task5homework
         {
             Auto car = new Auto();
 
-            do {
+            do
+            {
                 Console.WriteLine("Enter mark ");
                 string mark = Console.ReadLine();
                 car["mark"] = mark;
+            } while (String.IsNullOrEmpty(car["mark"]));
 
-                Console.WriteLine(car["mark"]);
+            Console.WriteLine("Enter model ");
+            string model = Console.ReadLine();
+            car["model"] = model;
 
-                /*Console.WriteLine("Enter model ");
-                string model = Console.ReadLine();
-                car["model"] = model;
-
+            do
+            {
                 Console.WriteLine("Enter vin ");
                 string vin = Console.ReadLine();
                 car["vin"] = vin;
+            } while (String.IsNullOrEmpty(car["vin"]));
 
+            do
+            {
                 Console.WriteLine("Enter year ");
                 string year = Console.ReadLine();
-                car["year"] = year;*/
-            } while (!String.IsNullOrEmpty(car["mark"]));           
-
+                car["year"] = year;
+            } while (String.IsNullOrEmpty(car["year"]));
+                  
             Console.WriteLine("\n" + car["mark"] + "\n" + car["model"] + "\n" + car["vin"] + "\n" + car["year"]);
 
             Console.ReadKey();
@@ -71,10 +76,10 @@ namespace task5homework
             {
                 switch (select)
                 {
-                    case "mark": return "mark: " + mark;
+                    case "mark": return mark == null ? null:"mark: " + mark;   // тернарный оператор - 1?2:3 , если 1 тру выполняется 2, иначе 3 .
                     case "model": return "model: " + model;
-                    case "vin": return "vin: " + vin;
-                    case "year": return "year: " + year;
+                    case "vin": return vin == null ? null: "vin: " + vin;
+                    case "year": return year == null ? null: "year: " + year;
                     default: return null;
                 }
             }
