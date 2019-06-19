@@ -1,0 +1,7 @@
+C:\Users\ПК Мастер\source\repos\task6 (Library)\task6 (Library)\bin\Debug\task6 (Library).exe.config
+C:\Users\ПК Мастер\source\repos\task6 (Library)\task6 (Library)\bin\Debug\task6 (Library).exe
+C:\Users\ПК Мастер\source\repos\task6 (Library)\task6 (Library)\bin\Debug\task6 (Library).pdb
+C:\Users\ПК Мастер\source\repos\task6 (Library)\task6 (Library)\obj\Debug\task6 (Library).csprojAssemblyReference.cache
+C:\Users\ПК Мастер\source\repos\task6 (Library)\task6 (Library)\obj\Debug\task6 (Library).csproj.CoreCompileInputs.cache
+C:\Users\ПК Мастер\source\repos\task6 (Library)\task6 (Library)\obj\Debug\task6 (Library).exe
+C:\Users\ПК Мастер\source\repos\task6 (Library)\task6 (Library)\obj\Debug\task6 (Library).pdb
