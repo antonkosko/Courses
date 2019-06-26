@@ -1,0 +1,7 @@
+C:\Users\ПК Мастер\source\repos\task9(bank2)\task9(bank2)\bin\Debug\task9(bank2).exe.config
+C:\Users\ПК Мастер\source\repos\task9(bank2)\task9(bank2)\bin\Debug\task9(bank2).exe
+C:\Users\ПК Мастер\source\repos\task9(bank2)\task9(bank2)\bin\Debug\task9(bank2).pdb
+C:\Users\ПК Мастер\source\repos\task9(bank2)\task9(bank2)\obj\Debug\task9(bank2).csprojAssemblyReference.cache
+C:\Users\ПК Мастер\source\repos\task9(bank2)\task9(bank2)\obj\Debug\task9(bank2).csproj.CoreCompileInputs.cache
+C:\Users\ПК Мастер\source\repos\task9(bank2)\task9(bank2)\obj\Debug\task9(bank2).exe
+C:\Users\ПК Мастер\source\repos\task9(bank2)\task9(bank2)\obj\Debug\task9(bank2).pdb
