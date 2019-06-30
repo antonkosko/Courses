@@ -11,6 +11,7 @@ namespace task9_bank2_
         private string cardnumber;
         private string cardtype;
         private int clientcardindex;
+        private int cardindex;
         private double cardbalance;
         public double visatax = 0.35;
         public double mctax = 0.2;
@@ -78,6 +79,18 @@ namespace task9_bank2_
             }
         }
 
+        public int CardIndex
+        {
+            get
+            {
+                return cardindex;
+            }
+            set
+            {
+                cardindex = value;
+            }
+        }
+
         public double CardBalance
         {
             get
@@ -97,21 +110,23 @@ namespace task9_bank2_
             }
         }
 
-        public Card (int clientcardindex, string bname, string cardtype, string cardnumber, double cardbalance): base(bname)
+        public Card (int clientcardindex,int cardindex, string bname, string cardtype, string cardnumber, double cardbalance): base(bname)
         {
             this.CardType = cardtype;
             this.CardNumber = cardnumber;
             this.ClientCardIndex = clientcardindex;
+            this.CardIndex = cardindex;
             this.CardBalance = cardbalance;
         }
 
-        public void getbalance()
+        public void Getbalance()
         {
             if (cardtype == "visa")
             {
                 if ((cardbalance - visatax) > 0)
                 {
                     Console.WriteLine("Current balance is - " + (cardbalance - visatax));
+                    Console.WriteLine("Tax value - " + visatax);
                     this.CardBalance = cardbalance - visatax;
                 }
                 else 
@@ -126,6 +141,7 @@ namespace task9_bank2_
                 if ((cardbalance - mctax) > 0)
                 {
                     Console.WriteLine("Current balance is - " + (cardbalance - mctax));
+                    Console.WriteLine("Tax value - " + mctax);
                     this.CardBalance = cardbalance - mctax;
                 }
                 else
@@ -134,6 +150,55 @@ namespace task9_bank2_
                 }
             }
         }
+
+        public void Addmoney()
+        {
+            Console.WriteLine("Enter the amount of money you want to put on the card: ");
+            double amount = Convert.ToDouble(Console.ReadLine());
+            if(amount > 0)
+            {
+                this.CardBalance = cardbalance + amount;
+                Console.WriteLine("The Money was successfully added.");
+            }
+            else
+            {
+                Console.WriteLine("Amount value can not be negative.");
+            }
+        }
         
+        public void Takemoney()
+        {
+            Console.WriteLine("Enter the amount of money you want to take from the card: ");
+            double amount = Convert.ToDouble(Console.ReadLine());
+            if (amount > 0)
+            {
+                if (cardbalance - visatax - amount > 0)
+                {
+                    if (cardtype == "visa")
+                    {                        
+                        Console.WriteLine("You get - " + amount);
+                        Console.WriteLine("Current balance is - " + (cardbalance - visatax - amount));
+                        Console.WriteLine("Tax value - " + visatax);
+                        this.CardBalance = cardbalance - visatax - amount;                            
+                    }
+
+                    if (CardType == "mastercard")
+                    {
+                        Console.WriteLine("You get - " + amount);
+                        Console.WriteLine("Current balance is - " + (cardbalance - mctax - amount));
+                        Console.WriteLine("Tax value - " + mctax);
+                        this.CardBalance = cardbalance - mctax - amount;                       
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Not enough money on the card balance.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Amount value can not be negative.");
+            }            
+        }
     }
 }
