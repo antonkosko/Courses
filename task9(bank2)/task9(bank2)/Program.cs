@@ -111,7 +111,7 @@ namespace task9_bank2_
             {
                 foreach (Client clients in client)
                 {
-                    sw.WriteLine(clients);
+                    sw.WriteLine(Convert.ToString(clients.ClientIndex) +","+ clients.ClientLogin + "," + clients.PersonName + "," + clients.PersonSurname);
                 }
             }
 
@@ -119,7 +119,7 @@ namespace task9_bank2_
             {
                 foreach (Card cards in card)
                 {
-                    sw.WriteLine(cards.CardIndex, cards.BName, cards.CardType, cards.CardNumber);
+                    sw.WriteLine(Convert.ToString(cards.ClientCardIndex) + "," + Convert.ToString(cards.CardIndex) + "," + cards.BName + "," + cards.CardType + "," + cards.CardNumber + "," + Convert.ToString(cards.CardBalance));
                 }
             }
 
